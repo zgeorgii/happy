@@ -1,4 +1,6 @@
 # happy
-team-repository
-this is a .md file, meaning it is written in and displays in
-MarkDown.
+WELCOME TO THE GUESSING GAME ABOUT KYLE!
+
+This is a 4 question game that is best answered with y,yes/n/no and is not case sensitive for input.
+
+GOOD LUCK!
