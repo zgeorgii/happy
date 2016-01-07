@@ -12,14 +12,14 @@ var user = prompt("What is your name?");
       res1.textContent = 'You answered: ' + answer1 + ". You're right!!!";
       counter +=1;
     } else {
-      res1.textContent = 'You answered: ' + answer1 + ". You lose :( " + "Kyle like cats.";
+      res1.textContent = 'You answered: ' + answer1 + ". You lose :( " + "Kyle likes cats.";
     }
     console.log(answer1);
   }
   function questionTwo(){
     var answer2 = prompt(user + " does Kyle enjoy learning?");
     if(answer2.toLowerCase() === "y" || answer2.toLowerCase() === "yes"){
-      res2.textContent = 'You answered: ' + answer2 + ". YAYYY you're right Kyle enjoy learning!!";
+      res2.textContent = 'You answered: ' + answer2 + ". YAYYY you're right Kyle enjoys learning!!";
       counter +=1;
     } else {
       res2.textContent = 'You answered: ' + answer2 + ". Awwwh! WRONG!!!";
@@ -27,21 +27,21 @@ var user = prompt("What is your name?");
     console.log(answer2);
   }
   function questionThree(){
-    var answer3 = prompt(user + " are Kyles eyes blue? ");
-    if(answer3.toLowerCase() === "y" || answer3.toLowerCase() === "yes") {
-      res3.textContent = 'You answered: ' + answer3 + '. ' + user + " you are  correct!";
+    var answer3 = prompt(user + "Are Kyles eyes blue? ");
+    if(answer3.toLowerCase() === "y" || answer3.toLowerCase() === "yes"){
+      res3.textContent = 'You answered: ' + answer3 + '. ' + user + " You are  correct!";
       counter +=1;
     } else {
-      res3.textContent = 'You answered: ' + answer3 + ". Sorry, "+ user + " , Kyles eyes are blue.";
+      res3.textContent = 'You answered: ' + answer3 + ". Sorry, " + user + " , Kyle's eyes are blue.";
     }
     console.log(answer3);
   }
   function questionFour(){
     do {
-      var bonus = prompt(user + " I'm thinking of a number between 1-10. Can you guess what it is?");
+      var bonus = prompt(user + ", I'm thinking of a number between 1-10. Can you guess what it is?");
       if (bonus == "6") {
         counter +=1;
-        res4.textContent = 'You answered: ' + bonus + ". Wow!!!! you're right!!!, GOOD JOB!!! " + user + " you got " + counter +"/4 correct";
+        res4.textContent = 'You answered: ' + bonus + ". Wow!!!! you're right!!! GOOD JOB!!! " + user + " you got " + counter +"/4 correct";
       } else if(bonus < 6) {
         alert(bonus + " is too low!!");
       } else { alert(bonus + " is too high!!");}
