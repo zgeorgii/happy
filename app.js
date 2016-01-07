@@ -4,10 +4,9 @@ var res2 = document.getElementById('result2');
 var res3 = document.getElementById('result3');
 var res4 = document.getElementById('result4');
 var user = prompt("What is your name?");
- alert("Hi there "+ user + " Imma axe you a question!!!");
   console.log("the user's name is " + user);
   function questionOne(){
-    var answer1 = prompt(user + " These are yes/no questions about Kyle Aubin, so please answer with Y or N. Does Kyle like cats?");
+    var answer1 = prompt("Hi there "+ user + ". Imma axe you a question!!! These are yes/no questions about Kyle Aubin, so please answer with Y or N. Does Kyle like cats?");
     if(answer1.toLowerCase() === "y" || answer1.toLowerCase() === "yes") {
       res1.textContent = 'You answered: ' + answer1 + ". You're right!!!";
       counter +=1;
@@ -27,7 +26,7 @@ var user = prompt("What is your name?");
     console.log(answer2);
   }
   function questionThree(){
-    var answer3 = prompt(user + "Are Kyles eyes blue? ");
+    var answer3 = prompt(user + ", Are Kyles eyes blue? ");
     if(answer3.toLowerCase() === "y" || answer3.toLowerCase() === "yes"){
       res3.textContent = 'You answered: ' + answer3 + '. ' + user + " You are  correct!";
       counter +=1;
@@ -43,10 +42,11 @@ var user = prompt("What is your name?");
         counter +=1;
         res4.textContent = 'You answered: ' + bonus + ". Wow!!!! you're right!!! GOOD JOB!!! " + user + " you got " + counter +"/4 correct";
       } else if(bonus < 6) {
-        alert(bonus + " is too low!!");
-      } else { alert(bonus + " is too high!!");}
+        res4.textContent = bonus + " is too low!!";
+      } else {res4.textContent = bonus + " is too high!!";}
     } while (bonus != 6);
   }
+
 
   questionOne();
   questionTwo();
